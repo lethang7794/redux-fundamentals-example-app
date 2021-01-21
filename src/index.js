@@ -4,7 +4,10 @@ import './index.css'
 import App from './App'
 
 import './api/server'
+
+// Provider: Makes the Redux store available to the connect() calls in the component hierarchy below.
 import { Provider } from 'react-redux'
+
 import store from './store'
 
 ReactDOM.render(

@@ -3,6 +3,9 @@ import { useDispatch } from 'react-redux'
 
 const Header = () => {
   const [text, setText] = useState('')
+  
+  // useDispatch: A hook to access the redux dispatch function.
+  // The only way to change the data in the store is to call dispatch() on it.
   const dispatch = useDispatch();
 
   const handleChange = (e) => setText(e.target.value)
